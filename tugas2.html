@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Laporan Teori Pemrograman Web</title>
+  <style>
+    body {
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+    }
+
+    h2 {
+      text-align: center;
+      color: #cccccc;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      cursor: pointer;
+      color: #f5deb3;
+      text-shadow: 0 0 8px #00bfff;
+      margin-top: 20px;
+    }
+
+    .jawaban {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      height: 150px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+      background-color: #222;
+      padding: 15px;
+      border-left: 4px solid #1e90ff;
+      font-family: inherit;
+      white-space: pre-line;
+    }
+
+    .konfirmasi {
+      display: none;
+      color: red;
+      margin-bottom: 20px;
+    }
+
+    .switch {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .rapi {
+      font-family: 'Times New Roman', serif;
+    }
+
+    .berantakan {
+      font-family: Arial, sans-serif;
+    }
+
+    .btn-group button, .run-button {
+      margin-right: 10px;
+      padding: 5px 15px;
+      cursor: pointer;
+    }
+
+    .run-button {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .run-button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body class="rapi">
+  <h1>TUGAS 2</h1>
+  <h2>Nama : Helen Kezia Nofitri Siahaan</h2>
+  <h2>NIM : 202332035</h2>
+
+  <div class="switch">
+    <label>
+      <input type="checkbox" id="modeSwitch"> Beralih ke Tampilan Berantakan
+    </label>
+  </div>
+
+  <div>
+    <h3 onclick="showConfirm(0)">1. Mengapa menggunakan CSS dan JavaScript dalam pemrograman web?</h3>
+    <div id="confirm-0" class="konfirmasi">
+      Apa anda ingin menyembunyikan isi dari bagian tersebut?<br>
+      <div class="btn-group">
+        <button onclick="hideJawaban(0, true)">Ya</button>
+        <button onclick="hideJawaban(0, false)">Tidak</button>
+      </div>
+    </div>
+    <div class="jawaban" id="jawaban-0">
+      CSS dan JavaScript digunakan dalam pengembangan web karena memiliki peran yang saling melengkapi. 
+      CSS berfungsi untuk mengolah tampilan visual seperti warna, ukuran teks, dan layout, 
+      sedangkan JavaScript memberikan kemampuan dinamis pada halaman web agar dapat menunjukkan 
+      efek efek visual seperti validasi form, animasi, serta respon sesuai keinginan user. 
+      Keduanya membantu meningkatkan pengalaman pengguna secara keseluruhan.
+    </div>
+  </div>
+
+  <div>
+    <h3 onclick="showConfirm(1)">2. Bagaimana CSS dan JavaScript dapat diintegrasikan dalam pemrograman web?</h3>
+    <div id="confirm-1" class="konfirmasi">
+      Apa anda ingin menyembunyikan isi dari bagian tersebut?<br>
+      <div class="btn-group">
+        <button onclick="hideJawaban(1, true)">Ya</button>
+        <button onclick="hideJawaban(1, false)">Tidak</button>
+      </div>
+    </div>
+    <div class="jawaban" id="jawaban-1">
+      Integrasi CSS dan JavaScript ke dalam HTML dapat dilakukan dengan tiga cara:
+      a. Inline, dengan cara menuliskan kode langsung di dalam tag HTML, 
+      seperti &lt;p style="color: red;"&gt; 
+      untuk CSS atau &lt;button onclick="alert('Hello')"&gt; untuk JavaScript.
+      b. Internal, yaitu menambahkan kode CSS dalam tag &lt;style&gt; dan 
+      kode JavaScript dalam tag &lt;script&gt; di dalam file HTML yang sama.
+      c. Eksternal, yaitu menambahkan file lain (.css dan .js) lalu dipanggil ke dalam HTML 
+      dengan &lt;link&gt; dan &lt;script&gt;.
+    </div>
+  </div>
+
+  <div>
+    <h3 onclick="showConfirm(2)">3. Jelaskan apa saja keuntungan menggunakan JavaScript dan CSS?</h3>
+    <div id="confirm-2" class="konfirmasi">
+      Apa anda ingin menyembunyikan isi dari bagian tersebut?<br>
+      <div class="btn-group">
+        <button onclick="hideJawaban(2, true)">Ya</button>
+        <button onclick="hideJawaban(2, false)">Tidak</button>
+      </div>
+    </div>
+    <div class="jawaban" id="jawaban-2">
+      A. Keuntungan CSS:
+      - Memisahkan elemen sehingga lebih teratur dan terorganisir
+      - Mempermudah pengaturan tampilan pada seluruh halaman web
+      - Mempercepat proses desain dan pengembangan halaman web
+
+      B. Keuntungan JavaScript:
+      - Membuat halaman menjadi interaktif dan lebih menarik
+      - Mengurangi beban server karena kemudahannya
+      - Mempermudah komunikasi data tanpa refresh halaman
+    </div>
+  </div>
+
+  <div>
+    <h3 onclick="showConfirm(3)">4. Jelaskan apa saja keuntungan menggunakan Bootstrap?</h3>
+    <div id="confirm-3" class="konfirmasi">
+      Apa anda ingin menyembunyikan isi dari bagian tersebut?<br>
+      <div class="btn-group">
+        <button onclick="hideJawaban(3, true)">Ya</button>
+        <button onclick="hideJawaban(3, false)">Tidak</button>
+      </div>
+    </div>
+    <div class="jawaban" id="jawaban-3">
+      Bootstrap adalah framework CSS yang mempermudah dan mempercepat proses desain web 
+      karena menyediakan komponen siap pakai. Keuntungannya meliputi:
+      a. Desain responsif otomatis yang menyesuaikan dengan berbagai ukuran layar.
+      b. Komponen yang konsisten dan modern tanpa harus menulis ulang CSS dari awal.
+      c. Dokumentasi lengkap dan komunitas besar yang membantu pembelajaran dan pemecahan masalah.
+      d. Cocok untuk pemula hingga profesional karena memudahkan penggunaannya.
+    </div>
+  </div>
+
+  <div>
+    <h3 onclick="showConfirm(4)">5. Contoh penggunaan Bootstrap dan hasilnya</h3>
+    <div id="confirm-4" class="konfirmasi">
+      Apa anda ingin menyembunyikan isi dari bagian tersebut?<br>
+      <div class="btn-group">
+        <button onclick="hideJawaban(4, true)">Ya</button>
+        <button onclick="hideJawaban(4, false)">Tidak</button>
+      </div>
+    </div>
+    <div class="jawaban" id="jawaban-4">
+      Contoh sederhana penggunaan Bootstrap adalah tombol button, dengan kode:
+      &lt;button class="btn btn-success"&gt;Klik Saya&lt;/button&gt;
+
+      Class btn dan btn-success dari Bootstrap digunakan untuk menciptakan tombol berwarna hijau dengan desain modern, padding otomatis, dan efek hover yang menarik. Fungsinya adalah memudahkan developer membuat tampilan yang menarik tanpa menulis banyak CSS. Untuk melihat hasilnya, cukup jalankan kode di atas dalam halaman HTML yang telah memuat Bootstrap, dan tampilannya akan langsung rapi serta responsif.
+
+      <br><br>
+      Berikut contoh tombol yang bisa dijalankan:
+      <a href="index.html" class="run-button">Klik Saya</a>
+    </div>
+  </div>
+
+  <script>
+    function showConfirm(index) {
+      document.querySelectorAll('.konfirmasi').forEach(el => el.style.display = 'none');
+      document.getElementById('confirm-' + index).style.display = 'block';
+    }
+
+    function hideJawaban(index, hide) {
+      const jawaban = document.getElementById('jawaban-' + index);
+      document.getElementById('confirm-' + index).style.display = 'none';
+      if (hide) {
+        jawaban.style.display = 'none';
+      } else {
+        jawaban.style.display = 'block';
+      }
+    }
+
+    document.getElementById('modeSwitch').addEventListener('change', function () {
+      document.body.className = this.checked ? 'berantakan' : 'rapi';
+    });
+  </script>
+</body>
+</html>
